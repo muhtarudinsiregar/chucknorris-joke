@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 .DS_Store
 node_modules/
 dist/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+npm-debug.log
+yarn-error.log
 test/unit/coverage
-=======
 # Logs
 logs
 *.log
@@ -44,4 +41,3 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
->>>>>>> e5cbcbff668a3ddea792f3985533f18a95f90799
