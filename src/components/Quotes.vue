@@ -3,7 +3,7 @@
     <div>
       <div class="jumbotron">
         <h2><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Chuck Norris Quotes</h2>
-        <h1 v-html="rawHtml">
+        <h1>
           {{ quote.joke }}
         </h1>
         <h3>&quot; Ntaknces</h3>
