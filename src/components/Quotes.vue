@@ -1,13 +1,13 @@
 <template>
   <div id="quote">
-    <div>
+    <div class="container">
       <div class="jumbotron">
-        <h2><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Chuck Norris Quotes</h2>
-        <h1>
+        <h2><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Chuck Norris Joke</h2>
+        <hr>
+        <h3 class="text-center">
           {{ quote.joke }}
-        </h1>
-        <h3>&quot; Ntaknces</h3>
-        <button type="button" name="button" @click="getRandomQuote()">Get Random Quotes</button>
+        </h3>
+        <button type="button"  class="btn btn-primary" name="button" @click="getRandomQuote()">Get Random Joke</button>
       </div>
     </div>
   </div>
@@ -32,6 +32,16 @@ export default {
   },
   mounted() {
     this.getRandomQuote();
+    setInterval(() => {
+      this.getRandomQuote();
+    }, 10000);
+  },
+  ready() {
+    this.getRandomQuote();
+
+    setInterval(() => {
+      this.getRandomQuote();
+    }, 1000);
   },
 };
 </script>
