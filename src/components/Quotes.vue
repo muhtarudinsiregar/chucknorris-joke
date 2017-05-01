@@ -11,7 +11,7 @@
             </blockquote>
 
             <blockquote>
-              <p class="joke-content">- Chuck norris</p>
+              <p class="joke-content">- Chuck norris joke number {{ quote.id }}</p>
             </blockquote>
 
             <br>
@@ -48,13 +48,6 @@ export default {
     setInterval(() => {
       this.getRandomQuote();
     }, 10000);
-  },
-  ready() {
-    this.getRandomQuote();
-
-    setInterval(() => {
-      this.getRandomQuote();
-    }, 1000);
   },
 };
 </script>
